@@ -58,14 +58,10 @@ class _MainPageState extends State<MainPage>
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           IconButton(
-              onPressed: () {},
-              /*onPressed: () => Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => NotificationsPage())),*/
+              onPressed: () {/* NotificationsPage */},
               icon: Icon(Icons.notifications)),
           IconButton(
-              onPressed: () {},
-              /*onPressed: () => Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => SearchPage())),*/
+              onPressed: () {/* SearchPage */},
               icon: SvgPicture.asset('assets/icons/search_icon.svg'))
         ],
       ),

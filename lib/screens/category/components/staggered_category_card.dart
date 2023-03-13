@@ -37,9 +37,6 @@ class CategoryCard extends StatelessWidget {
   final Animation<double> height;
   final Animation<double> itemHeight;
 
-  // This function is called each time the controller "ticks" a new frame.
-  // When it runs, all of the animation's values will have been
-  // updated to reflect the controller's current value.
   Widget _buildAnimation(BuildContext context, Widget? child) {
     return Container(
       height: height.value,
@@ -136,7 +133,7 @@ class _StaggeredCardCardState extends State<StaggeredCardCard>
     try {
       await _controller.forward().orCancel;
     } on TickerCanceled {
-      // the animation got canceled, probably because we were disposed
+      // la animacion se cancela
     }
   }
 
@@ -144,13 +141,13 @@ class _StaggeredCardCardState extends State<StaggeredCardCard>
     try {
       await _controller.reverse().orCancel;
     } on TickerCanceled {
-      // the animation got canceled, probably because we were disposed
+      // la animacion se cancela
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    var timeDilation = 10.0; // 1.0 is normal animation speed.
+    var timeDilation = 10.0; // 1.0 es la velocidad de animación normal.
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: () {

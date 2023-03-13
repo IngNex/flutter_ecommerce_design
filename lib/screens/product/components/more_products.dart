@@ -43,8 +43,8 @@ class MoreProducts extends StatelessWidget {
             itemBuilder: (_, index) {
               return Padding(
 
-                  ///calculates the left and right margins
-                  ///to be even with the screen margin
+                  ///calcula los márgenes izquierdo y derecho
+                  ///para estar a la altura del margen de la pantalla
                   padding: index == 0
                       ? EdgeInsets.only(left: 24.0, right: 8.0)
                       : index == 4
