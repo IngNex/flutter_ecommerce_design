@@ -1,7 +1,7 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter_ecommerce/app_properties.dart';
 import 'package:flutter_ecommerce/models/product.dart';
-//import 'package:flutter_ecommerce/screens/product/product_page.dart';
+import 'package:flutter_ecommerce/screens/product/product_page.dart';
 import 'package:flutter/material.dart';
 
 class ProductList extends StatelessWidget {
@@ -107,8 +107,8 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      /*onTap: () => Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => ProductPage(product: product))),*/
+      onTap: () => Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => ProductPage(product: product))),
       child: Stack(
         children: <Widget>[
           Container(
