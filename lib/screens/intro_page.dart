@@ -186,9 +186,9 @@ class _IntroPageState extends State<IntroPage> {
                                   fontSize: 16),
                             ),
                             onPressed: () {
-                              /*Navigator.of(context).pushReplacement(
+                              Navigator.of(context).pushReplacement(
                                   MaterialPageRoute(
-                                      builder: (context) => MainPage()));*/
+                                      builder: (context) => MainPage()));
                             },
                           ),
                         ),
@@ -217,9 +217,9 @@ class _IntroPageState extends State<IntroPage> {
                                       fontSize: 16),
                                 ),
                                 onPressed: () {
-                                  /*Navigator.of(context).pushReplacement(
+                                  Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(
-                                          builder: (context) => MainPage()));*/
+                                          builder: (context) => MainPage()));
                                 },
                               )
                       ],
