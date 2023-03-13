@@ -1,6 +1,6 @@
 import 'package:flutter_ecommerce/app_properties.dart';
 import 'package:flutter_ecommerce/models/product.dart';
-//import 'package:flutter_ecommerce/screens/product/product_page.dart';
+import 'package:flutter_ecommerce/screens/product/product_page.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter/material.dart';
 
@@ -90,8 +90,8 @@ class RecommendedList extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) => new ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
                 child: InkWell(
-                  /*onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                      builder: (_) => ProductPage(product: products[index]))),*/
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (_) => ProductPage(product: products[index]))),
                   child: Container(
                       decoration: BoxDecoration(
                         gradient: RadialGradient(

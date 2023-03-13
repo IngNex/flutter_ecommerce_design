@@ -50,6 +50,9 @@ dependencies:
   numberpicker: ^2.1.1
   #rating
   flutter_rating_bar: ^4.0.0
+  #flare splash
+  flare_splash_screen: ^4.0.0
+
 
 
 
