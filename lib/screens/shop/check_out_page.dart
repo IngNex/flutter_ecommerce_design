@@ -52,8 +52,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
   @override
   Widget build(BuildContext context) {
     Widget checkOutButton = InkWell(
-      /*onTap: () => Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => AddAddressPage())),*/
+      onTap: () {/* AddAddressPage */},
       child: Container(
         height: 80,
         width: MediaQuery.of(context).size.width / 1.5,
@@ -87,9 +86,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
         actions: <Widget>[
           IconButton(
             icon: Image.asset('assets/icons/denied_wallet.png'),
-            onPressed: () {},
-            /*onPressed: () => Navigator.of(context)
-                .push(MaterialPageRoute(builder: (_) => UnpaidPage())),*/
+            onPressed: () {/* UnpaidPage */},
           )
         ],
         title: Text(

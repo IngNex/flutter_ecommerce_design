@@ -117,7 +117,7 @@ class _ShopBottomSheetState extends State<ShopBottomSheet> {
                             });
                           },
                         ),
-                        index == 4
+                        index == products.length - 1
                             ? SizedBox()
                             : Container(
                                 width: 2,

@@ -1,6 +1,5 @@
 import 'package:flutter_ecommerce/models/product.dart';
 import 'package:flutter_ecommerce/screens/product/components/rating_bottomSheet.dart';
-//import 'package:flutter_ecommerce/screens/search_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -80,10 +79,7 @@ class _ViewProductPageState extends State<ViewProductPage> {
                 'assets/icons/search_icon.svg',
                 fit: BoxFit.scaleDown,
               ),
-              onPressed:
-                  () {} /*=> Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => SearchPage()))*/
-              ,
+              onPressed: () {/* SearchPage */},
             )
           ],
           title: Text(

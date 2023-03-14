@@ -56,10 +56,7 @@ class ProfilePage extends StatelessWidget {
                           children: <Widget>[
                             IconButton(
                               icon: Image.asset('assets/icons/wallet.png'),
-                              onPressed: () {},
-                              /*onPressed: () => Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                      builder: (_) => WalletPage())),*/
+                              onPressed: () {/* WalletPage */},
                             ),
                             Text(
                               'Cartera',
@@ -72,10 +69,7 @@ class ProfilePage extends StatelessWidget {
                           children: <Widget>[
                             IconButton(
                               icon: Image.asset('assets/icons/truck.png'),
-                              onPressed: () {},
-                              /*onPressed: () => Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                      builder: (_) => TrackingPage())),*/
+                              onPressed: () {/* TrackingPage */},
                             ),
                             Text(
                               'Envió',
@@ -88,10 +82,7 @@ class ProfilePage extends StatelessWidget {
                           children: <Widget>[
                             IconButton(
                               icon: Image.asset('assets/icons/card.png'),
-                              onPressed: () {},
-                              /*onPressed: () => Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                      builder: (_) => PaymentPage())),*/
+                              onPressed: () {/* PaymentPage */},
                             ),
                             Text(
                               'Pago',
@@ -126,8 +117,9 @@ class ProfilePage extends StatelessWidget {
                     height: 30,
                   ),
                   trailing: Icon(Icons.chevron_right, color: yellow),
-                  /*onTap: () => Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => SettingsPage())),*/
+                  onTap: () {
+                    /* SettingsPage */
+                  },
                 ),
                 Divider(),
                 ListTile(
@@ -145,8 +137,9 @@ class ProfilePage extends StatelessWidget {
                   subtitle: Text('Preguntas y respuesta'),
                   leading: Image.asset('assets/icons/faq.png'),
                   trailing: Icon(Icons.chevron_right, color: yellow),
-                  /*onTap: () => Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => FaqPage())),*/
+                  onTap: () {
+                    /* FaqPage */
+                  },
                 ),
                 Divider(),
               ],

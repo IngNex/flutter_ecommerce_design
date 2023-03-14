@@ -1,6 +1,5 @@
 import 'package:flutter_ecommerce/app_properties.dart';
 import 'package:flutter_ecommerce/models/product.dart';
-//import 'package:flutter_ecommerce/screens/search_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -67,10 +66,7 @@ class _ProductPageState extends State<ProductPage> {
               'assets/icons/search_icon.svg',
               fit: BoxFit.scaleDown,
             ),
-            onPressed:
-                () {} /*=> Navigator.of(context)
-                .push(MaterialPageRoute(builder: (_) => SearchPage()))*/
-            ,
+            onPressed: () {/* SearchPage */},
           )
         ],
         title: Text(
@@ -160,13 +156,6 @@ class _ProductPageState extends State<ProductPage> {
                     Color.fromRGBO(255, 255, 255, 0),
                     Color.fromARGB(107, 34, 64, 233),
                     Color.fromARGB(222, 34, 64, 233),
-
-                    /*
-                    Color.fromARGB(124, 84, 166, 253),
-                    Color.fromARGB(124, 84, 98, 253),
-                    Color.fromRGBO(255, 255, 255, 0),
-                    Color.fromRGBO(253, 192, 84, 0.5),
-                    Color.fromRGBO(253, 192, 84, 1),*/
                   ],
                       begin: FractionalOffset.topCenter,
                       end: FractionalOffset.bottomCenter)),
